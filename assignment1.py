@@ -64,17 +64,19 @@ Output : uniqueLetters = d,e,i,c,a,t,o,n"""
 
 
 def printUniqueLetters(s):
-    alpha = [0]*26
-    s = s.lower()
+    alpha = [0]*26  # I am taking a list of size 26 initialized with all 0's
+    s = s.lower()   # converting the string into lowercase
     for char in s:
-        alpha[ord(char)-97]+=1
-        if alpha[ord(char)-97]==1:
-            print(char,end=",")
-    print()
+        alpha[ord(char)-97]+=1     # The ascii value of 'a' = 97. HEre hat i am doing i the index 0 is equal to 'a' how? ascii('a')=97-97=0.
+        if alpha[ord(char)-97]==1: # So i am subtracting 97 from the ascii value of each character of string which give the index.
+            print(char,end=",")    # By using that i am storing the count of each character.
+    print()                        # If the count is 1 i am printing otherwise i not doing anything.
 if __name__ == '__main__':
     try:
-        printUniqueLetters(input("Enter a string contains alphabet only : "))
-    except IndexError as e:
-        print("You should enter the alphabet letters only!")
-        print(e)
+        printUniqueLetters(input("Enter a string contains alphabet only : "))  # Taking the input string from user.
+    except IndexError as e:                  
+        print("You should enter the alphabet letters only!")   # If the user gives the input as special characters we will get an error.
+        print(e)   # The error is IndexError.
+        
+ # I hope the code is now understandable.
 
