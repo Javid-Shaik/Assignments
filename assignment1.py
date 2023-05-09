@@ -12,7 +12,7 @@ GST : 12%
 Delivery Charges : Rs. 250.00 """
 
 def totalInvocie(prices,gst=12):
-    delivery_charges = 250.00
+    delivery_charges = 250.00          
     sub_total = sum(prices)+delivery_charges
     total_invoice = (sub_total*gst)/100
     print("Total Invoice is : %.2f" %(total_invoice+sub_total))
@@ -39,8 +39,8 @@ if __name__== '__main__':
             Defult Delivery Charges = 250.00""")
     gst = 12
     try :
-        prices = map(float,input("Enter price of Each Book seperated by space : ").split())
-        gst = float(input("Enter GST if you want to : "))
+        prices = map(float,input("Enter price of Each Book seperated by space : ").split()) # Taking the input from user in a single line.
+        gst = float(input("Enter GST if you want to : ")) # If the user gives strings then it will give us an error.
     except ValueError as e:
         prices=[499.00,855.00,645.00]
     totalInvocie(prices,gst)
@@ -67,10 +67,11 @@ def printUniqueLetters(s):
     alpha = [0]*26  # I am taking a list of size 26 initialized with all 0's
     s = s.lower()   # converting the string into lowercase
     for char in s:
-        alpha[ord(char)-97]+=1     # The ascii value of 'a' = 97. HEre hat i am doing i the index 0 is equal to 'a' how? ascii('a')=97-97=0.
+        alpha[ord(char)-97]+=1     # The ascii value of 'a' = 97. Here what I am doing is the index 0 is equal to 'a' how? 
+                                   # ord functiion will give the ascii value of a character. ord('b')-97 = 98-97 = 1. The index 1='b'
         if alpha[ord(char)-97]==1: # So i am subtracting 97 from the ascii value of each character of string which give the index.
             print(char,end=",")    # By using that i am storing the count of each character.
-    print()                        # If the count is 1 i am printing otherwise i not doing anything.
+    print()                        # If the count is 1 i am printing otherwise i am not doing anything.
 if __name__ == '__main__':
     try:
         printUniqueLetters(input("Enter a string contains alphabet only : "))  # Taking the input string from user.
