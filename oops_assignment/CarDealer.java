@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class cardealer {
+public class CarDealer {
 			public String carmodel;
 			public String insurance;
 			public String add_accessories;
@@ -55,7 +55,7 @@ public class cardealer {
 		
 			}
 	}
-public class cardealeruse extends cardealer{
+public class Carealeruse extends cardealer{
 	public static void main(String[] args) {
 		cardealeruse cdu=new cardealeruse();
 		String[] arr= new String[]{"Polo Trendline","Polo Highline","Virtus Trendline","Virtus Highline","Taigun Trendline","Taigun Highline","Taigun Topline"};
