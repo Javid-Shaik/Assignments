@@ -2,7 +2,7 @@ import java.util.*;
 public class MissingNumbers {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        // Reading the n valu from user
+        // Reading the n value from user
         System.out.print("Enter n value : ");
         int n = sc.nextInt();
         ArrayList<Integer> nums = new ArrayList<>();
