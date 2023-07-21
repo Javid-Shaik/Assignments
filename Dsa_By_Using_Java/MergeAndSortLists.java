@@ -2,7 +2,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class RemoveDuplicate {
+public class MergeAndSortLists {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         // creating a linkedlist and reading the data into it
