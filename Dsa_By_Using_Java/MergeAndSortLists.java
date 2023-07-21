@@ -37,6 +37,7 @@ public class MergeAndSortLists {
         for (Integer item : mergedList) {
             System.out.print(item + " ");
         }
+        sc.close();
     }
 
     public static LinkedList<Integer> mergeSortedLists(LinkedList<Integer> list1, LinkedList<Integer> list2) {

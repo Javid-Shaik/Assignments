@@ -30,5 +30,6 @@ public class Singulars {
             pairs += map.get(key)%2;
         }
         System.out.println(pairs);
+        sc.close();
     }
 }

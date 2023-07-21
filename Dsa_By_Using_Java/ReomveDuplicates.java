@@ -20,6 +20,7 @@ public class ReomveDuplicates {
         for(Integer item : list){
             System.out.print(item+" ");
         }
+        sc.close();
     }
 
     private static void removeDuplicates(LinkedList<Integer>list){
@@ -37,5 +38,6 @@ public class ReomveDuplicates {
         // clear the entire list and add the unique elements
         list.clear();
         list.addAll(unique);
+        
     }
 }
