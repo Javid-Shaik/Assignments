@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class RemoveDuplicate {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
+        // creating a linkedlist and reading the data into it
         LinkedList<Integer> list1 = new LinkedList<>();
         System.out.print("Enter list1 size : ");
         int n1 = sc.nextInt();
@@ -12,7 +13,7 @@ public class RemoveDuplicate {
         for(int i=0;i<n1;i++){
             list1.add(sc.nextInt());
         }
-        
+        // creating anothor list and reading the data into it
         LinkedList<Integer> list2 = new LinkedList<>();
         
         System.out.print("Enter list2 size : ");
@@ -29,10 +30,10 @@ public class RemoveDuplicate {
         Collections.sort(list1);
         Collections.sort(list2);
 
-        // Merge the sorted linked lists
+        // Merging the sorted linked lists
         LinkedList<Integer> mergedList = mergeSortedLists(list1, list2);
 
-        // Print the merged list
+        // Printing the merged list
         for (Integer item : mergedList) {
             System.out.print(item + " ");
         }
@@ -41,11 +42,11 @@ public class RemoveDuplicate {
     public static LinkedList<Integer> mergeSortedLists(LinkedList<Integer> list1, LinkedList<Integer> list2) {
         LinkedList<Integer> mergedList = new LinkedList<>();
         int i = 0, j = 0;
-
+        // checking if either of the lists has reached the end then stop
         while (i < list1.size() && j < list2.size()) {
             int num1 = list1.get(i);
             int num2 = list2.get(j);
-
+            // checking if the element in list1 is <= element in list2 then add the smallest element into the list3
             if (num1 <= num2) {
                 mergedList.add(num1);
                 i++;
@@ -54,7 +55,8 @@ public class RemoveDuplicate {
                 j++;
             }
         }
-
+        //upon reaching end of one of the list i am traversing the end of two lists and adding the elements to the mergedlist
+        
         while (i < list1.size()) {
             mergedList.add(list1.get(i));
             i++;
