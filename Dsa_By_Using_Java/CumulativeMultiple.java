@@ -6,7 +6,7 @@ public class CumulativeMultiple {
         // reading the n vallue form user
         System.out.print("Enter value of n :");
         int n = sc.nextInt();
-        //creating an arraylist to store th n integers
+        //creating an arraylist to store the n integers
         ArrayList<Integer> nums = new ArrayList<Integer>();
         System.out.println("Enter nxt n integers");
         //loop for reading the numbers and storing it into the arraylist

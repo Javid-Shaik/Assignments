@@ -55,7 +55,7 @@ public class CarDealer {
 		
 			}
 	}
-public class Carealeruse extends cardealer{
+public class Carealeruse extends CarDealer{
 	public static void main(String[] args) {
 		cardealeruse cdu=new cardealeruse();
 		String[] arr= new String[]{"Polo Trendline","Polo Highline","Virtus Trendline","Virtus Highline","Taigun Trendline","Taigun Highline","Taigun Topline"};

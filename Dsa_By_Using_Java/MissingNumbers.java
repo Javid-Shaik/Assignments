@@ -15,7 +15,7 @@ public class MissingNumbers {
         // created an array to store the missing numbers
         ArrayList<Integer> miss = new ArrayList<>();
         for(int i=0;i<n-1;i++){
-            // if the two consecutive numbers are not add the num into miss until the two nums are consecutive
+            // if the two numbers are not conescutive then add the num into miss until the two nums are consecutive
             if(nums.get(i)!=nums.get(i+1)-1){
                 int t = nums.get(i);
                 while(t!=nums.get(i+1)-1)

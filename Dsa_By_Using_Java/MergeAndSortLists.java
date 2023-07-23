@@ -6,20 +6,20 @@ public class MergeAndSortLists {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         // creating a linkedlist and reading the data into it
+        
         LinkedList<Integer> list1 = new LinkedList<>();
         System.out.print("Enter list1 size : ");
         int n1 = sc.nextInt();
         System.out.println("Enter elements for list1 : ");
+        
         for(int i=0;i<n1;i++){
             list1.add(sc.nextInt());
         }
+        
         // creating anothor list and reading the data into it
-        LinkedList<Integer> list2 = new LinkedList<>();
-        
+        LinkedList<Integer> list2 = new LinkedList<>(); 
         System.out.print("Enter list2 size : ");
-        
         int n2 = sc.nextInt();
-        
         System.out.println("Enter elements for list1 : ");
         
         for(int i=0;i<n2;i++){
@@ -56,7 +56,7 @@ public class MergeAndSortLists {
                 j++;
             }
         }
-        //upon reaching end of one of the list i am traversing the end of two lists and adding the elements to the mergedlist
+        //upon reaching end of one of the list i am traversing the end of another(we don't know) list and adding the elements to the mergedlist
         
         while (i < list1.size()) {
             mergedList.add(list1.get(i));
