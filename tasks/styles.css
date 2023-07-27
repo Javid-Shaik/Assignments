@@ -28,6 +28,15 @@ body {
     cursor: pointer;
   }
   
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
   main {
     min-height: 400px;
     display: flex;
