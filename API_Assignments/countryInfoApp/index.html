@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Country Information</h1>
+        <input
+        type="text"
+        id="country-input"
+        placeholder="Enter a country..."
+        autocomplete="off"
+        />
+        <div class="autocomplete-list" id="autocomplete-list"></div>
+
+        <div class="country-info">
+            <h2 id="country-name">Country Name</h2>
+            <p id="country-capital">Capital: -</p>
+            <p id="country-population">Population: -</p>
+            <p id="country-region">Region: -</p>
+            <p id="currency">Currency: -</p>
+            <p id="country-flag"><img src="" alt="Country Flag"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

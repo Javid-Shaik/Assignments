@@ -1,0 +1,101 @@
+/* Resetting the default styles */
+body, h1, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.weather-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #d6cbcb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+div {
+    margin: 10px 0;
+}
+
+#location {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#temperature {
+    font-size: 18px;
+    color: #555;
+}
+
+#description {
+    font-size: 16px;
+    color: #777;
+}
+
+#icon img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+.get-location {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.get-location input[type="text"] {
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+    border: none; 
+    box-shadow: 5px 5px 5px #a7a6a6;
+    border-radius: 5px;
+    background-color: #e6e1e1;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.get-location input[type="text"]:focus {
+    background-color: #fff;
+    box-shadow:5px 5px 5px #868686;
+}
+
+.get-location button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF; /* Blue background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-location button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}
+
+#clearButton {
+    background-color:#ccc;
+    color: #1b1b1b;
+}
+
+#clearButton:hover {
+    background-color:#797171;
+}
+
+
+
